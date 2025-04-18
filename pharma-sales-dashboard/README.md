@@ -14,7 +14,7 @@ A Streamlit-based interactive dashboard for analyzing pharmaceutical sales data,
 ## Dashboard Views
 
 ### Main Dashboard Overview
-![Dashboard Overview](docs/images/dashboard_overview.png)
+![Dashboard Overview](/docs/images/dashboard_overview.png)
 
 The main dashboard shows key metrics and trends:
 - Total Sales: $2,083,417.33
@@ -25,7 +25,7 @@ The main dashboard shows key metrics and trends:
 - Regional distribution pie chart
 
 ### Product Performance Analysis
-![Product Performance](docs/images/product_performance.png)
+![Product Performance](/docs/images/product_performance.png)
 
 The product analysis dashboard provides:
 - Product-wise sales breakdown
@@ -34,7 +34,7 @@ The product analysis dashboard provides:
 - Interactive filtering by region and category
 
 ### Regional Sales Distribution
-![Regional Sales](docs/images/regional_sales.png)
+![Regional Sales](/docs/images/regional_sales.png)
 
 The regional sales analysis shows:
 - Geographic distribution of sales
@@ -45,7 +45,7 @@ The regional sales analysis shows:
 - Customer concentration analysis
 
 ### Customer Segmentation Analysis
-![Customer Segments](docs/images/customer_segments.png)
+![Customer Segments](/docs/images/customer_segments.png)
 
 The customer segmentation view presents:
 - Distribution by customer type (Hospital/Clinic/Pharmacy)
