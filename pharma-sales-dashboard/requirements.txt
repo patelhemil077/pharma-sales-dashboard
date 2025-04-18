@@ -1,0 +1,6 @@
+pandas==2.1.0
+numpy==1.24.3
+psycopg2-binary==2.9.7  # For PostgreSQL connection
+plotly==5.17.0  # For visualization
+streamlit==1.27.0  # For dashboard (optional)
+python-dotenv==1.0.0  # For environment variables 

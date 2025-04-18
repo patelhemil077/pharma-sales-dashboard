@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+{
+  "rules": [
+    {
+      "name": "SQL File Structure",
+      "description": "All SQL queries must be modularized and stored in the `sql/` folder. Each query must use aliases, follow snake_case naming, and include a comment header explaining its purpose."
+    },
+    {
+      "name": "Data Integrity",
+      "description": "Before any SQL visualization, data must be cleaned and validated for nulls, duplicates, and type mismatches. Add Python/Pandas data validation scripts if necessary."
+    },
+    {
+      "name": "KPI Design Convention",
+      "description": "Every KPI should be clearly defined using a standard: formula, business goal, and expected outcome. Save this as a `kpi_definitions.md` in the root directory."
+    },
+    {
+      "name": "Dashboard Standards",
+      "description": "Dashboards must include filters for Date, Region, Product. Every visualization must answer a specific business question."
+    },
+    {
+      "name": "README Rule",
+      "description": "README must include a diagram of KPI relationships, schema, and business logic. Use Mermaid or text-based visuals."
+    }
+  ]
+}
