@@ -33,6 +33,28 @@ The product analysis dashboard provides:
 - Top performing products (led by Amoxicillin)
 - Interactive filtering by region and category
 
+### Regional Sales Distribution
+![Regional Sales](docs/images/regional_sales.png)
+
+The regional sales analysis shows:
+- Geographic distribution of sales
+- Region-wise revenue breakdown
+- Top performing territories
+- Market penetration metrics
+- Year-over-year growth by region
+- Customer concentration analysis
+
+### Customer Segmentation Analysis
+![Customer Segments](docs/images/customer_segments.png)
+
+The customer segmentation view presents:
+- Distribution by customer type (Hospital/Clinic/Pharmacy)
+- Customer lifetime value analysis
+- Purchase frequency patterns
+- Average order value by segment
+- Customer retention metrics
+- Growth opportunities by segment
+
 ## Project Structure
 
 ```
