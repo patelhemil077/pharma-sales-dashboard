@@ -11,6 +11,50 @@ A Streamlit-based interactive dashboard for analyzing pharmaceutical sales data,
 - 📉 Trend analysis
 - 🌍 Regional performance tracking
 
+## Dashboard Views
+
+### Main Dashboard Overview
+![Dashboard Overview](./docs/images/dashboard_overview.png)
+
+The main dashboard shows key metrics and trends:
+- Total Sales: $2,083,417.33
+- Total Units Sold: 37,809
+- Average Order Value: $2,854.00
+- Total Orders: 730
+- Daily sales trend visualization
+- Regional distribution pie chart
+
+### Product Performance Analysis
+![Product Performance](./docs/images/product_performance.png)
+
+The product analysis dashboard provides:
+- Product-wise sales breakdown
+- Category performance metrics
+- Top performing products (led by Amoxicillin)
+- Interactive filtering by region and category
+
+### Regional Sales Distribution
+![Regional Sales](./docs/images/regional_sales.png)
+
+The regional sales analysis shows:
+- Geographic distribution of sales
+- Region-wise revenue breakdown
+- Top performing territories
+- Market penetration metrics
+- Year-over-year growth by region
+- Customer concentration analysis
+
+### Customer Segmentation Analysis
+![Customer Segments](./docs/images/customer_segments.png)
+
+The customer segmentation view presents:
+- Distribution by customer type (Hospital/Clinic/Pharmacy)
+- Customer lifetime value analysis
+- Purchase frequency patterns
+- Average order value by segment
+- Customer retention metrics
+- Growth opportunities by segment
+
 ## Project Structure
 
 ```
