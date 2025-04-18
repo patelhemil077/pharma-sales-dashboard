@@ -5,25 +5,53 @@ This dashboard provides real-time insights into pharmaceutical sales performance
 
 ## Dashboard Screenshots
 
-### Main Dashboard Overview
+### 1. Sales Overview Dashboard
 ![Dashboard Overview](docs/images/dashboard_overview.png)
 
-The main dashboard provides comprehensive insights including:
+The main dashboard provides a comprehensive view of key sales metrics and trends:
+
+**Key Metrics:**
 - Total Sales: $2,083,417.33
 - Total Units Sold: 37,809
 - Average Order Value: $2,854.00
 - Total Orders: 730
-- Daily Sales Trend showing consistent growth
-- Regional Performance with equal distribution across regions (25% each)
 
-### Product Performance Analysis
+**Visualizations:**
+- **Sales Trend**: Line chart showing consistent upward growth from January 2023 to December 2023
+- **Regional Performance**: Pie chart demonstrating balanced distribution across regions:
+  - East: 25%
+  - North: 25%
+  - South: 25%
+  - West: 25%
+
+**Interactive Features:**
+- Date range selector (Jan 2023 - Dec 2023)
+- Region filter
+- Product category filter
+- Sales amount range slider
+
+### 2. Product Performance Analysis
 ![Product Performance](docs/images/product_performance.png)
 
-The product performance view shows:
-- Detailed product-wise sales breakdown
-- Category-wise performance metrics
-- Top performing products (Amoxicillin leading sales)
-- Comparative analysis between product categories
+The product performance view offers detailed insights into product and category performance:
+
+**Product Analysis:**
+- **Top Products by Sales:**
+  1. Amoxicillin (Leading sales)
+  2. Paracetamol
+  3. Aspirin
+  4. Ibuprofen
+
+**Category Analysis:**
+- **Category Distribution:**
+  - Pain Relief: Highest market share
+  - Antibiotics: Second largest category
+
+**Features:**
+- Interactive bar charts for product comparison
+- Category-wise sales breakdown
+- Filtered view showing North region and specific product categories
+- Sales amount range filter: $38.90 - $6,821.83
 
 ## Dashboard Visualizations
 
