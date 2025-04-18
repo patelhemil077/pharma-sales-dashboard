@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 # Create directory if it doesn't exist
-import os
-os.makedirs('docs/images', exist_ok=True)
+os.makedirs('pharma-sales-dashboard/docs/images', exist_ok=True)
 
 # Regional Sales Mockup
 plt.figure(figsize=(12, 6))
@@ -20,7 +20,7 @@ line = ax2.plot(regions, growth, color='red', linewidth=2, marker='o')
 ax1.set_ylabel('Sales (M$)')
 ax2.set_ylabel('YoY Growth %')
 plt.title('Regional Sales Distribution')
-plt.savefig('docs/images/regional_sales.png', dpi=300, bbox_inches='tight')
+plt.savefig('pharma-sales-dashboard/docs/images/regional_sales.png', dpi=300, bbox_inches='tight')
 plt.close()
 
 # Customer Segmentation Mockup
@@ -38,5 +38,5 @@ line = ax2.plot(segments, avg_order, color='orange', linewidth=2, marker='o')
 ax1.set_ylabel('Number of Customers')
 ax2.set_ylabel('Average Order Value ($)')
 plt.title('Customer Segmentation Analysis')
-plt.savefig('docs/images/customer_segments.png', dpi=300, bbox_inches='tight')
+plt.savefig('pharma-sales-dashboard/docs/images/customer_segments.png', dpi=300, bbox_inches='tight')
 plt.close() 
