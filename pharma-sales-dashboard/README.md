@@ -1,14 +1,20 @@
-# Pharma Sales KPI Dashboard
+# Pharmaceutical Sales Dashboard
 
-## Business Problem
-This dashboard provides real-time insights into pharmaceutical sales performance metrics, enabling stakeholders to track revenue trends, customer behavior, and product performance. The solution helps identify growth opportunities, optimize inventory, and improve customer retention.
+A Streamlit-based interactive dashboard for analyzing pharmaceutical sales data, providing insights into sales trends, product performance, and regional distribution.
+
+## Features
+
+- 📊 Interactive visualizations
+- 🔄 Real-time data filtering
+- 📱 Responsive design
+- 🔍 Detailed sales analytics
+- 📈 Trend analysis
+- 🌍 Regional performance tracking
 
 ## Dashboard Screenshots
 
-### 1. Sales Overview Dashboard
-![Dashboard Overview](docs/images/dashboard_overview.png)
-
-The main dashboard provides a comprehensive view of key sales metrics and trends:
+### Sales Overview
+![Sales Overview Dashboard](docs/images/dashboard_overview.png)
 
 **Key Metrics:**
 - Total Sales: $2,083,417.33
@@ -16,168 +22,53 @@ The main dashboard provides a comprehensive view of key sales metrics and trends
 - Average Order Value: $2,854.00
 - Total Orders: 730
 
-**Visualizations:**
-- **Sales Trend**: Line chart showing consistent upward growth from January 2023 to December 2023
-- **Regional Performance**: Pie chart demonstrating balanced distribution across regions:
-  - East: 25%
-  - North: 25%
-  - South: 25%
-  - West: 25%
-
-**Interactive Features:**
-- Date range selector (Jan 2023 - Dec 2023)
-- Region filter
-- Product category filter
-- Sales amount range slider
-
-### 2. Product Performance Analysis
+### Product Performance
 ![Product Performance](docs/images/product_performance.png)
 
-The product performance view offers detailed insights into product and category performance:
-
 **Product Analysis:**
-- **Top Products by Sales:**
-  1. Amoxicillin (Leading sales)
-  2. Paracetamol
-  3. Aspirin
-  4. Ibuprofen
-
-**Category Analysis:**
-- **Category Distribution:**
-  - Pain Relief: Highest market share
-  - Antibiotics: Second largest category
-
-**Features:**
-- Interactive bar charts for product comparison
-- Category-wise sales breakdown
-- Filtered view showing North region and specific product categories
-- Sales amount range filter: $38.90 - $6,821.83
-
-## Dashboard Visualizations
-
-### 1. Sales Overview Dashboard
-![Sales Overview Dashboard](reports/html_reports/sales_summary.html)
-This dashboard provides a high-level overview of sales performance, including:
-- Total sales revenue
-- Monthly growth trends
-- Regional performance comparison
-- Top performing products
-
-### 2. Regional Performance Analysis
-![Regional Performance Dashboard](reports/html_reports/regional_performance.html)
-Key features:
-- Geographic distribution of sales
-- Region-wise growth metrics
-- Market penetration analysis
-- Regional customer demographics
-
-### 3. Product Performance Dashboard
-![Product Performance Dashboard](reports/html_reports/product_performance.html)
-Highlights:
-- Product-wise sales breakdown
-- Inventory turnover rates
-- Product category performance
-- Seasonal trends analysis
-
-### 4. Customer Distribution Analysis
-![Customer Distribution Dashboard](reports/html_reports/customer_distribution.html)
-Features:
-- Customer segmentation
-- Purchase frequency analysis
-- Customer lifetime value
-- Churn rate monitoring
-
-### 5. Delivery Performance Metrics
-![Delivery Performance Dashboard](reports/html_reports/delivery_performance.html)
-Includes:
-- Order fulfillment rates
-- Delivery time analysis
-- Service level agreements
-- Logistics performance
-
-### 6. Monthly Trend Analysis
-![Monthly Trend Dashboard](reports/html_reports/monthly_trend.html)
-Shows:
-- Monthly sales patterns
-- Seasonal variations
-- Growth trends
-- Forecast vs actual comparison
-
-## Dataset Schema
-The analysis is based on a comprehensive sales dataset with the following structure:
-
-```sql
-CREATE TABLE pharma_sales (
-    transaction_id SERIAL PRIMARY KEY,
-    date DATE,
-    region VARCHAR(50),
-    product_name VARCHAR(100),
-    sales_amount DECIMAL(10,2),
-    customer_id VARCHAR(50),
-    units_sold INTEGER
-);
-```
-
-## Key Performance Indicators (KPIs)
-
-### Revenue Metrics
-- **Total Sales (YTD)**: Year-to-date cumulative sales
-- **Monthly Growth Rate**: Month-over-month sales growth percentage
-- **YOY Growth**: Year-over-year growth by region
-
-### Customer Metrics
-- **Customer Segmentation**: Sales distribution by customer type
-- **Top 5 Customers**: Highest revenue generating customers
-- **Monthly Churn Rate**: Rate of customer inactivity
-
-### Product Performance
-- **Quarterly Product Sales**: Total sales per product per quarter
-- **Units Ordered vs Delivered**: Order fulfillment tracking
-- **Product Mix**: Distribution of sales across product categories
-
-## Dashboard Features
-- Interactive filters for date range, regions, and product categories
-- Real-time sales amount range selector
-- Dynamic updates for all visualizations
-- Dark mode interface for better visibility
-- Responsive design that adapts to screen size
-
-## Dashboard Insights
-
-### Key Findings
-1. Sales show strong YoY growth at 88% compared to plan
-2. Hospital segment contributes to 34% of total revenue
-3. Monthly order fulfillment rate consistently above 85%
-4. Customer retention shows positive trend with decreasing churn
-
-### Areas of Focus
-- Regional performance variations
-- Product-specific growth trends
-- Customer segment profitability
-- Order fulfillment optimization
+- Top performing products led by Amoxicillin
+- Category-wise performance breakdown
+- Sales distribution by region
+- Interactive filters for detailed analysis
 
 ## Project Structure
 ```
 pharma-sales-dashboard/
-├── data/               # Raw and processed data files
-├── sql/               # SQL queries for KPI calculations
-├── reports/           # Dashboard exports and visualizations
-├── docs/              # Documentation and images
-└── README.md          # Project documentation
+├── data/               # Sample data files
+│   ├── sales.csv      # Sales transaction data
+│   ├── products.csv   # Product information
+│   └── customers.csv  # Customer information
+├── pharma_dashboard/  # Main application package
+│   ├── dashboard.py   # Streamlit dashboard implementation
+│   └── data_processor.py  # Data processing and validation
+├── tests/            # Unit tests
+├── docs/             # Documentation
+├── requirements.txt  # Python dependencies
+├── setup.py         # Package installation script
+├── LICENSE          # MIT License
+└── README.md        # Project documentation
 ```
 
-## Next Steps
-1. Implement predictive analytics for sales forecasting
-2. Add customer lifetime value analysis
-3. Develop product recommendation engine
-4. Create automated alert system for KPI thresholds
-5. Integrate market share data for competitive analysis
+## Data Requirements
+- Sales transaction data with dates, products, and amounts
+- Product catalog with categories and pricing
+- Customer information for segmentation
+- Regional sales data for geographical analysis
+
+## Installation & Usage
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the dashboard: `streamlit run pharma_dashboard/dashboard.py`
+4. Access via browser at `http://localhost:8501`
 
 ## Technical Stack
-- Database: PostgreSQL
-- Data Processing: Python/Pandas
-- Visualization: Streamlit with Plotly
-- Version Control: Git
+- Python 3.8+
+- Streamlit for dashboard interface
+- Pandas for data processing
+- Plotly for interactive visualizations
+
+## License
+MIT License - See LICENSE file for details
 
 ## Contact
 For questions or suggestions, please contact the BI team. 
