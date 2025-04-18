@@ -14,7 +14,7 @@ A Streamlit-based interactive dashboard for analyzing pharmaceutical sales data,
 ## Dashboard Views
 
 ### Main Dashboard Overview
-![Dashboard Overview](/docs/images/dashboard_overview.png)
+![Dashboard Overview](./docs/images/dashboard_overview.png)
 
 The main dashboard shows key metrics and trends:
 - Total Sales: $2,083,417.33
@@ -25,7 +25,7 @@ The main dashboard shows key metrics and trends:
 - Regional distribution pie chart
 
 ### Product Performance Analysis
-![Product Performance](/docs/images/product_performance.png)
+![Product Performance](./docs/images/product_performance.png)
 
 The product analysis dashboard provides:
 - Product-wise sales breakdown
@@ -34,7 +34,7 @@ The product analysis dashboard provides:
 - Interactive filtering by region and category
 
 ### Regional Sales Distribution
-![Regional Sales](/docs/images/regional_sales.png)
+![Regional Sales](./docs/images/regional_sales.png)
 
 The regional sales analysis shows:
 - Geographic distribution of sales
@@ -45,7 +45,7 @@ The regional sales analysis shows:
 - Customer concentration analysis
 
 ### Customer Segmentation Analysis
-![Customer Segments](/docs/images/customer_segments.png)
+![Customer Segments](./docs/images/customer_segments.png)
 
 The customer segmentation view presents:
 - Distribution by customer type (Hospital/Clinic/Pharmacy)
@@ -169,78 +169,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Streamlit](https://streamlit.io/) for the dashboard framework
 - [Plotly](https://plotly.com/) for interactive visualizations
-- [Pandas](https://pandas.pydata.org/) for data manipulation
-
-## Contact
-For questions or suggestions, please contact the BI team.
-
-## Data Schema and KPI Relationships
-
-### Data Schema
-```mermaid
-erDiagram
-    SALES {
-        date Date
-        string Product
-        string Customer
-        int Quantity
-        float Unit_Price
-        float Total
-    }
-    PRODUCTS {
-        string Product
-        string Category
-        string product_id
-    }
-    CUSTOMERS {
-        string Customer
-        string Region
-        string Customer_Type
-        string customer_id
-    }
-    SALES }|--|| PRODUCTS : "has"
-    SALES }|--|| CUSTOMERS : "belongs to"
-```
-
-### KPI Relationships
-```mermaid
-graph TD
-    A[Total Sales] --> B[Average Order Value]
-    A --> C[Sales Growth Rate]
-    D[Total Units] --> E[Product Performance]
-    D --> F[Inventory Turnover]
-    G[Regional Sales] --> H[Market Penetration]
-    G --> I[Territory Performance]
-    J[Customer Type] --> K[Channel Performance]
-    J --> L[Customer Segmentation]
-```
-
-## Business Logic
-
-### Core Metrics Calculation
-- Total Sales = SUM(Quantity × Unit_Price)
-- Average Order Value = Total Sales ÷ Number of Orders
-- Sales Growth Rate = ((Current Period Sales - Previous Period Sales) ÷ Previous Period Sales) × 100
-- Market Penetration = (Active Customers in Region ÷ Total Potential Customers in Region) × 100
-- Product Performance Score = (Units Sold × Profit Margin) + (Customer Satisfaction × 0.3)
-
-### Data Processing Rules
-1. Date Validation
-   - Exclude records with null dates
-   - Format dates to YYYY-MM-DD
-   - Filter out future dates
-
-2. Sales Validation
-   - Total amount must equal Quantity × Unit_Price
-   - Negative quantities are invalid
-   - Zero-price transactions require management approval
-
-3. Regional Analysis
-   - Group sales by Region and Customer Type
-   - Calculate market share per region
-   - Track year-over-year growth by territory
-
-4. Product Categories
-   - Group products by therapeutic area
-   - Track seasonal variations
-   - Monitor stock levels and reorder points 
+- [Pandas](https://pandas.pydata.org/) for data manipulation 
