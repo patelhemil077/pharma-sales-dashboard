@@ -6,7 +6,7 @@ This dashboard provides real-time insights into pharmaceutical sales performance
 ## Dashboard Screenshots
 
 ### Main Dashboard Overview
-![Dashboard Overview](../docs/images/dashboard_overview.png)
+![Dashboard Overview](docs/images/dashboard_overview.png)
 
 The main dashboard provides comprehensive insights including:
 - Total Sales: $2,083,417.33
@@ -17,7 +17,7 @@ The main dashboard provides comprehensive insights including:
 - Regional Performance with equal distribution across regions (25% each)
 
 ### Product Performance Analysis
-![Product Performance](../docs/images/product_performance.png)
+![Product Performance](docs/images/product_performance.png)
 
 The product performance view shows:
 - Detailed product-wise sales breakdown
