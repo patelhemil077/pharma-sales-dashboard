@@ -1,16 +1,21 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
+import os
 
 def load_and_process_data():
     """
     Load and process data from CSV files.
     Implements data validation rules and cleaning.
     """
+    # Get the current directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(os.path.dirname(current_dir), 'data')
+    
     # Load data
-    sales_df = pd.read_csv('../data/sales.csv')
-    products_df = pd.read_csv('../data/products.csv')
-    customers_df = pd.read_csv('../data/customers.csv')
+    sales_df = pd.read_csv(os.path.join(data_dir, 'sales.csv'))
+    products_df = pd.read_csv(os.path.join(data_dir, 'products.csv'))
+    customers_df = pd.read_csv(os.path.join(data_dir, 'customers.csv'))
 
     # Data cleaning and validation
     sales_df = clean_sales_data(sales_df)
